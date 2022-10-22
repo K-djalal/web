@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="Css/all.min.css" />
+		<link rel="stylesheet" href="Css/framework.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+			integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="Css/master.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?=family=Open+Sans:wght@300;500&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Profile</title>
+	</head>
+	<body>
+		<a href="../projects.html" class="mainwebsite center-flex mb-15 m-20 c-black"><i class="fa fa-arrow-left" aria-hidden="true"></i>
+			Back to main website</a>
+
+		<div class="page d-flex">
+			<div class="sidebar bg-linear">
+				<div class="navigation2">
+					<ul>
+						<li class="list1 ">
+							<b></b>
+							<b></b>
+
+							<a href="bannar.html">
+								<span class="icon1">
+									<ion-icon name="logo-tux"></ion-icon>
+								</span>
+								<span class="text1">Sea</span>
+							</a>
+						</li>
+						<li class="list1">
+							<b></b>
+							<b></b>
+
+							<a href="projects.html">
+								<span class="icon1">
+									<ion-icon name="git-merge-outline"></ion-icon>
+								</span>
+								<span class="text1">Projects</span>
+							</a>
+						</li>
+						<li class="list1">
+							<b></b>
+							<b></b>
+							<a href="settings.html">
+								<span class="icon1">
+									<ion-icon name="settings-outline"></ion-icon>
+								</span>
+								<span class="text1">Settings</span>
+							</a>
+						</li>
+						<li class="list1 active">
+							<b></b>
+							<b></b>
+							<a href="profile.html">
+								<span class="icon1">
+									<ion-icon name="person-outline"></ion-icon>
+								</span>
+								<span class="text1">Profile</span>
+							</a>
+						</li>
+						<li class="list1">
+							<b></b>
+							<b></b>
+							<a href="index.html">
+								<span class="icon1">
+									<ion-icon name="bar-chart-outline"></ion-icon>
+								</span>
+								<span class="text1">Dashboard </span>
+							</a>
+						</li>
+						<li class="list1">
+							<b></b>
+							<b></b>
+							<a href="courses.html">
+								<span class="icon1">
+									<ion-icon name="reader-outline"></ion-icon>
+								</span>
+								<span class="text1">Courses</span>
+							</a>
+						</li>
+						<li class="list1">
+							<b></b>
+							<b></b>
+							<a href="friends.html">
+								<span class="icon1">
+									<ion-icon name="people-circle-outline"></ion-icon>
+								</span>
+								<span class="text1">Friends</span>
+							</a>
+						</li>
+						<li class="list1">
+							<b></b>
+							<b></b>
+							<a href="files.html">
+								<span class="icon1">
+									<ion-icon name="document-outline"></ion-icon>
+								</span>
+								<span class="text1">Files</span>
+							</a>
+						</li>
+						<li class="list1">
+							<b></b>
+							<b></b>
+							<a href="plans.html">
+								<span class="icon1">
+									<ion-icon name="card-outline"></ion-icon>
+								</span>
+								<span class="text1">Plans</span>
+							</a>
+						</li>
+						<li class="list1">
+							<b></b>
+							<b></b>
+							<a href="hours.html">
+								<span class="icon1">
+									<ion-icon name="time-outline"></ion-icon>
+								</span>
+								<span class="text1">Hour</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="toggle1">
+				<ion-icon name="menu-outline" class="open"></ion-icon>
+				<ion-icon name="close-outline" class="close"></ion-icon>
+			</div>
+			<script
+				type="module"
+				src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+			></script>
+			<script
+				nomodule
+				src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+			></script>
+			<script>
+				// add toggle
+
+				let menuToggle1 = document.querySelector('.toggle1');
+				let navigation2 = document.querySelector('.navigation2');
+				menuToggle1.onclick = function () {
+					menuToggle1.classList.toggle('active');
+					navigation2.classList.toggle('active');
+				};
+			</script>
+			<script
+				type="module"
+				src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+			></script>
+			<script
+				nomodule
+				src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+			></script>
+			<script>
+				let list1 = document.querySelectorAll('.list1');
+				for (let i = 0; i < list1.length; i++) {
+					list1[i].onclick = function () {
+						let j = 0;
+						while (j < list1.length) {
+							list1[j++].className = 'list1';
+						}
+						list1[i].className = 'list1 active';
+					};
+				}
+			</script>
+			<div class="page1 m-height center-flex">
+				<div class="container1 p-relative">
+					<div class="left_side">
+						<div class="profileText">
+							<div class="imgBx3">
+								<img src="imgs/2022.jpg" alt="" />
+							</div>
+							<h2>
+								KADRI DJALAL <br />
+								<span> Ingenieur en Statistique Appliquee</span>
+							</h2>
+						</div>
+						<div class="contactInfo">
+							<h3 class="title3">Contact Info</h3>
+							<ul>
+								<li>
+									<span class="icon3">
+										<i class="fa fa-phone" aria-hidden="true"></i>
+									</span>
+									<span class="text3"> +213 771-29-27-03 </span>
+								</li>
+								<li>
+									<span class="icon3">
+										<i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+									</span>
+									<span class="text3"> london24@live.be </span>
+								</li>
+								<li>
+									<span class="icon3">
+										<i class="fa fa-globe" aria-hidden="true"></i>
+									</span>
+									<span class="text3">www.mywebsite.com </span>
+								</li>
+								<li>
+									<span class="icon3">
+										<i class="fa fa-linkedin" aria-hidden="true"></i>
+									</span>
+									<span class="text3"> www.linkedin.com/me </span>
+								</li>
+								<li>
+									<span class="icon3">
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+									</span>
+									<span class="text3"> Alger, Bach Djerah </span>
+								</li>
+							</ul>
+						</div>
+						<div class="contactInfo education">
+							<h3 class="title3">Education</h3>
+							<ul>
+								<li>
+									<h5>2008 - 2014</h5>
+									<h4>Ingenieur en Statistique</h4>
+									<h4>Ecole National de Statistique et Economie Appliquee</h4>
+								</li>
+								<li>
+									<h5>2007 - 2008</h5>
+									<h4>Baccalauréat en sciences naturelles et de la vie</h4>
+									<h4>Lycée Cheikh Al-Haddad</h4>
+								</li>
+							</ul>
+						</div>
+						<div class="contactInfo language">
+							<h3 class="title3">Langues</h3>
+							<ul>
+								<li>
+									<span class="text">English</span>
+									<span class="percent">
+										<div style="width: 90%"></div>
+									</span>
+								</li>
+								<li>
+									<span class="text">Arabe</span>
+									<span class="percent">
+										<div style="width: 98%"></div>
+									</span>
+								</li>
+								<li>
+									<span class="text">Français</span>
+									<span class="percent">
+										<div style="width: 60%"></div>
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="right_side">
+						<div class="about1">
+							<h2 class="title8">Profile</h2>
+							<p>
+								Extrement motive pour developer constamment mes competences et
+								évoluer professionnellement. Je suis confiant dans ma capacité à
+								proposer des idées intérssantes pour des campagnes publicitaires
+								inoubliables
+							</p>
+						</div>
+						<div class="about1">
+							<h2 class="title8">Expérience</h2>
+							<div class="box2">
+								<div class="year_company">
+									<h5>2021 - Présent</h5>
+									<h5>Microsoft</h5>
+								</div>
+								<div class="text4">
+									<h4>Designer DZ Senior</h4>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Fuga dignissimos fugiat numquam quam id doloribus aliquam
+										voluptatum. Sit porro, voluptatibus repudiandae praesentium
+										sapiente eaque laborum, numquam, voluptate placeat eius
+										nesciunt.
+									</p>
+								</div>
+							</div>
+							<div class="box2">
+								<div class="year_company">
+									<h5>2018 - 2020</h5>
+									<h5>Lycée Privé</h5>
+								</div>
+								<div class="text4">
+									<h4>Professeur de mathématiques</h4>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Fuga dignissimos fugiat numquam quam id doloribus aliquam
+										voluptatum. Sit porro, voluptatibus repudiandae praesentium
+										sapiente eaque laborum, numquam, voluptate placeat eius
+										nesciunt.
+									</p>
+								</div>
+							</div>
+							<div class="box2">
+								<div class="year_company">
+									<h5>2015 - 2018</h5>
+									<h5>El-Nahar</h5>
+								</div>
+								<div class="text4">
+									<h4>Agent Site Web</h4>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Fuga dignissimos fugiat numquam quam id doloribus aliquam
+										voluptatum. Sit porro, voluptatibus repudiandae praesentium
+										sapiente eaque laborum, numquam, voluptate placeat eius
+										nesciunt.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="about skills">
+							<h2 class="title8">Compétences Professionnelles</h2>
+							<div class="box2">
+								<h4>Html</h4>
+								<div class="percent">
+									<div style="width: 95%"></div>
+								</div>
+							</div>
+							<div class="box2">
+								<h4>CSS</h4>
+								<div class="percent">
+									<div style="width: 88%"></div>
+								</div>
+							</div>
+							<div class="box2">
+								<h4>JavaScript</h4>
+								<div class="percent">
+									<div style="width: 92%"></div>
+								</div>
+							</div>
+							<div class="box2">
+								<h4>SPSS</h4>
+								<div class="percent">
+									<div style="width: 90%"></div>
+								</div>
+							</div>
+							<div class="box2">
+								<h4>AMOS</h4>
+								<div class="percent">
+									<div style="width: 85%"></div>
+								</div>
+							</div>
+							<div class="box2">
+								<h4>Mplus</h4>
+								<div class="percent">
+									<div style="width: 98%"></div>
+								</div>
+							</div>
+						</div>
+						<div class="about interest">
+							<h2 class="title8"> Autres </h2>
+							<ul>
+								<li><i class="fa fa-book" aria-hidden="true"></i>
+									en train de lire</li>
+								<li><i class="fa fa-cutlery" aria-hidden="true"></i>
+									cuisine</li>
+								<li><i class="fa fa-gamepad" aria-hidden="true"></i>mode de jeu</li>
+								<li><i class="fa fa-microphone" aria-hidden="true"></i>
+									chanter une chanson</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

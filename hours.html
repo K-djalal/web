@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Hours</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="Css/all.min.css" />
+		<link rel="stylesheet" href="Css/framework.css" />
+		<link rel="stylesheet" href="Css/master.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?=family=Open+Sans:wght@300;500&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="page d-flex">
+			<div class="sidebar bg-linear">
+				<h3 class="p-relative text-c mt-0">DJALAL</h3>
+				<div class="navigation2">
+					<ul>
+						<li class="list1">
+							<b></b>
+							<b></b>
+
+							<a href="bannar.html">
+								<span class="icon1">
+									<ion-icon name="logo-tux"></ion-icon>
+								</span>
+								<span class="text1">Sea</span>
+							</a>
+						</li>
+						<li class="list1">
+							<b></b>
+							<b></b>
+
+							<a href="projects.html">
+								<span class="icon1">
+									<ion-icon name="git-merge-outline"></ion-icon>
+								</span>
+								<span class="text1">Projects</span>
+							</a>
+						</li>
+						<li class="list1">
+							<b></b>
+							<b></b>
+							<a href="settings.html">
+								<span class="icon1">
+									<ion-icon name="settings-outline"></ion-icon>
+								</span>
+								<span class="text1">Settings</span>
+							</a>
+						</li>
+						<li class="list1">
+							<b></b>
+							<b></b>
+							<a href="profile.html">
+								<span class="icon1">
+									<ion-icon name="person-outline"></ion-icon>
+								</span>
+								<span class="text1">Profile</span>
+							</a>
+						</li>
+						<!-- 
+
+
+						 -->
+
+						<li class="list1">
+							<b></b>
+							<b></b>
+							<a href="index.html">
+								<span class="icon1">
+									<ion-icon name="bar-chart-outline"></ion-icon>
+								</span>
+								<span class="text1">Dashboard </span>
+							</a>
+						</li>
+						<li class="list1">
+							<b></b>
+							<b></b>
+							<a href="courses.html">
+								<span class="icon1">
+									<ion-icon name="reader-outline"></ion-icon>
+								</span>
+								<span class="text1">Courses</span>
+							</a>
+						</li>
+						<li class="list1">
+							<b></b>
+							<b></b>
+							<a href="friends.html">
+								<span class="icon1">
+									<ion-icon name="people-circle-outline"></ion-icon>
+								</span>
+								<span class="text1">Friends</span>
+							</a>
+						</li>
+						<li class="list1">
+							<b></b>
+							<b></b>
+							<a href="files.html">
+								<span class="icon1">
+									<ion-icon name="document-outline"></ion-icon>
+								</span>
+								<span class="text1">Files</span>
+							</a>
+						</li>
+						<li class="list1">
+							<b></b>
+							<b></b>
+							<a href="plans.html">
+								<span class="icon1">
+									<ion-icon name="card-outline"></ion-icon>
+								</span>
+								<span class="text1">Plans</span>
+							</a>
+						</li>
+						<li class="list1 active">
+							<b></b>
+							<b></b>
+							<a href="hours.html">
+								<span class="icon1">
+									<ion-icon name="time-outline"></ion-icon>
+								</span>
+								<span class="text1">hour</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="toggle1">
+				<ion-icon name="menu-outline" class="open"></ion-icon>
+				<ion-icon name="close-outline" class="close"></ion-icon>
+			</div>
+			<script
+				type="module"
+				src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+			></script>
+			<script
+				nomodule
+				src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+			></script>
+			<script>
+				// add toggle
+
+				let menuToggle1 = document.querySelector('.toggle1');
+				let navigation2 = document.querySelector('.navigation2');
+				menuToggle1.onclick = function () {
+					menuToggle1.classList.toggle('active');
+					navigation2.classList.toggle('active');
+				};
+				// add active class in selected list item
+				let list1 = document.querySelectorAll('.list1');
+				for (let i = 0; i < list1.length; i++) {
+					list1[i].onclick = function () {
+						let j = 0;
+						while (j < list1.length) {
+							list1[j++].className = 'list1';
+						}
+						list1[i].className = 'list1 active';
+					};
+				}
+			</script>
+
+			<div class="content w-full bg-linear center-flex">
+				<div class="container p-relative bg-black">
+					<div class="clock p-relative bg-black center-flex mb-30">
+						<div class="circle" id="sc" style="--clr: #04fc43"><i></i></div>
+						<div class="circle circle2" id="mn" style="--clr: #fee800">
+							<i></i>
+						</div>
+						<div class="circle circle3" id="hr" style="--clr: #ff2972">
+							<i></i>
+						</div>
+
+						<span style="--i: 1"><b>1</b></span>
+						<span style="--i: 2"><b>2</b></span>
+						<span style="--i: 3"><b>3</b></span>
+						<span style="--i: 4"><b>4</b></span>
+						<span style="--i: 5"><b>5</b></span>
+						<span style="--i: 6"><b>6</b></span>
+						<span style="--i: 7"><b>7</b></span>
+						<span style="--i: 8"><b>8</b></span>
+						<span style="--i: 9"><b>9</b></span>
+						<span style="--i: 10"><b>10</b></span>
+						<span style="--i: 11"><b>11</b></span>
+						<span style="--i: 12"><b>12</b></span>
+					</div>
+					<!-- digital clock -->
+					<div id="time">
+						<div id="hours" style="--clr: #ff2972">00</div>
+						<div id="minutes" style="--clr: #fee800">00</div>
+						<div id="seconds" style="--clr: #04fc43">00</div>
+						<div id="ampm ">PM</div>
+					</div>
+				</div>
+				<div class="copyright">
+					<p>copyright @ 2022 Kadri Djalal. All Right Reserved</p>
+				</div>
+				<script>
+					let hr = document.querySelector(`#hr`);
+					let mn = document.querySelector(`#mn`);
+					let sc = document.querySelector(`#sc`);
+
+					setInterval(() => {
+						let day = new Date();
+						let hh = day.getHours() * 30;
+						let mm = day.getMinutes() * 6;
+						let ss = day.getSeconds() * 6;
+
+						hr.style.transform = `rotateZ(${hh + mm / 12}deg)`;
+						mn.style.transform = `rotateZ(${mm}deg)`;
+						sc.style.transform = `rotateZ(${ss}deg)`;
+						// digital clock
+						let hours = document.getElementById(`hours`);
+						let minutes = document.getElementById(`minutes`);
+						let seconds = document.getElementById(`seconds`);
+						let ampm = document.getElementById(`ampm`);
+
+						let h = new Date().getHours();
+						let m = new Date().getMinutes();
+						let s = new Date().getSeconds();
+
+						let am = h >= 12 ? 'AM' : 'PM';
+
+						if (h > 12) {
+							h = h - 12;
+						}
+
+						h = h < 10 ? '0' + h : h;
+						m = m < 10 ? '0' + m : m;
+						s = s < 10 ? '0' + s : s;
+
+						hours.innerHTML = h;
+						minutes.innerHTML = m;
+						seconds.innerHTML = s;
+						ampm.innerHTML = pm;
+					});
+				</script>
+			</div>
+		</div>
+	</body>
+</html>

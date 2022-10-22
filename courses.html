@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="Css/all.min.css" />
+		<link rel="stylesheet" href="Css/framework.css" />
+		<link rel="stylesheet" href="Css/master.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?=family=Open+Sans:wght@300;500&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Courses</title>
+	</head>
+	<body>
+		<div class="page d-flex">
+			<div class="sidebar bg-linear">
+				<h3 class="p-relative text-c mt-0">DJALAL</h3>
+				<div class="navigation2 ">
+					<ul>
+						<li class="list1 ">
+							<b></b>
+							<b></b>
+
+							<a href="bannar.html">
+								<span class="icon1">
+									<ion-icon name="logo-tux"></ion-icon>
+								</span>
+								<span class="text1">Sea</span>
+							</a>
+						</li>
+						<li class="list1">
+							<b></b>
+							<b></b>
+
+							<a href="projects.html">
+								<span class="icon1">
+									<ion-icon name="git-merge-outline"></ion-icon>
+								</span>
+								<span class="text1">Projects</span>
+							</a>
+						</li>
+						<li class="list1">
+							<b></b>
+							<b></b>
+							<a href="settings.html">
+								<span class="icon1">
+									<ion-icon name="settings-outline"></ion-icon>
+								</span>
+								<span class="text1">Settings</span>
+							</a>
+						</li>
+						<li class="list1">
+							<b></b>
+							<b></b>
+							<a href="profile.html">
+								<span class="icon1">
+									<ion-icon name="person-outline"></ion-icon>
+								</span>
+								<span class="text1">Profile</span>
+							</a>
+						</li>
+						<li class="list1">
+							<b></b>
+							<b></b>
+							<a href="index.html">
+								<span class="icon1">
+									<ion-icon name="bar-chart-outline"></ion-icon>
+								</span>
+								<span class="text1">Dashboard </span>
+							</a>
+						</li>
+						<li class="list1 active">
+							<b></b>
+							<b></b>
+							<a href="courses.html">
+								<span class="icon1">
+									<ion-icon name="reader-outline"></ion-icon>
+								</span>
+								<span class="text1">Courses</span>
+							</a>
+						</li>
+						<li class="list1">
+							<b></b>
+							<b></b>
+							<a href="friends.html">
+								<span class="icon1">
+									<ion-icon name="people-circle-outline"></ion-icon>
+								</span>
+								<span class="text1">Friends</span>
+							</a>
+						</li>
+						<li class="list1">
+							<b></b>
+							<b></b>
+							<a href="files.html">
+								<span class="icon1">
+									<ion-icon name="document-outline"></ion-icon>
+								</span>
+								<span class="text1">Files</span>
+							</a>
+						</li>
+						<li class="list1">
+							<b></b>
+							<b></b>
+							<a href="plans.html">
+								<span class="icon1">
+									<ion-icon name="card-outline"></ion-icon>
+								</span>
+								<span class="text1">Plans</span>
+							</a>
+						</li>
+						<li class="list1">
+							<b></b>
+							<b></b>
+							<a href="hours.html">
+								<span class="icon1">
+									<ion-icon name="time-outline"></ion-icon>
+								</span>
+								<span class="text1">Hour</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="content bg-linear w-full">
+				<!-- start Head -->
+
+				<div class="navigation d-flex ">
+					<div class="userBx">
+						<div class="imgBx ">
+							<img src="imgs/2022.jpg" alt="">
+						</div>
+						<p class="username">Kadri Djalal</p>
+					</div>
+					<div class="menuToggle between-flex p-relative"></div>
+					<ul class="menu">
+		<li><a href="profile.html"><ion-icon name="person-outline"></ion-icon>My Profile</a></li>
+		<li><a href="friends.html"><ion-icon name="chatbubble-outline"></ion-icon>Messages</a></li>
+		<li><a href="#"><ion-icon name="notifications-outline"></ion-icon>
+			Notification</a></li>
+		<li><a href="settings.html"><ion-icon name="settings-outline"></ion-icon>Settings</a></li>
+		<li><a href="#"><ion-icon name="information-circle-outline"></ion-icon>
+			Help & Support</a></li>
+		<li><a href="#"><ion-icon name="log-out-outline"></ion-icon>Logout</a></li>
+		
+					</ul>
+				</div>
+				<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+				<script >
+					let menuToggle =document.querySelector(`.menuToggle`)
+					let navigation =document.querySelector(`.navigation`)
+				
+					menuToggle.onclick= function(){
+						navigation.classList.toggle(`active`)
+					}
+				</script>
+				<div class="head bg-white p-15 between-flex">
+					<div class="search p-relative">
+						<input class="p-10" type="search" placeholder="Type A Keyword" />
+					</div>
+					<div class="icons d-flex align-center">
+						<span class="notification p-relative">
+							<i class="fa-regular fa-bell fa-lg"></i>
+						</span>
+						<img src="imgs/IMG-20220511-WA0001.jpg" alt="" />
+					</div>
+				</div>
+				<h1 class="p-relative">Courses</h1>
+				<div class="courses-page d-grid m-20 gap-20">
+					<div class="course bg-white rad-6 p-relative">
+						<img class="cover" src="imgs/course-01.jpg" alt="" />
+						<img class="instructor" src="imgs/2022.jpg" alt="" />
+						<div class="p-20">
+							<h4 class="m-0">Mastering Web Design</h4>
+							<p class="description c-grey mt-15 fs-14">
+								Master The Art Of Web Designing And Mocking, Prototyping And
+								Creating Web Design Architecture
+							</p>
+						</div>
+						<div class="info p-15 p-relative between-flex">
+							<span class="title bg-blue c-white btn-shape">Course Info</span>
+							<span class="c-grey">
+								<i class="fa-regular fa-user"></i>
+								950
+							</span>
+							<span class="c-grey">
+								<i class="fa-solid fa-dollar-sign"></i>
+								165
+							</span>
+						</div>
+					</div>
+					<div class="course bg-white rad-6 p-relative">
+						<img class="cover" src="imgs/course-02.jpg" alt="" />
+						<img class="instructor" src="imgs/2022.jpg" alt="" />
+						<div class="p-20">
+							<h4 class="m-0">Mastering Web Design</h4>
+							<p class="description c-grey mt-15 fs-14">
+								Master The Art Of Web Designing And Mocking, Prototyping And
+								Creating Web Design Architecture
+							</p>
+						</div>
+						<div class="info p-15 p-relative between-flex">
+							<span class="title bg-blue c-white btn-shape">Course Info</span>
+							<span class="c-grey">
+								<i class="fa-regular fa-user"></i>
+								950
+							</span>
+							<span class="c-grey">
+								<i class="fa-solid fa-dollar-sign"></i>
+								165
+							</span>
+						</div>
+					</div>
+					<div class="course bg-white rad-6 p-relative">
+						<img class="cover" src="imgs/course-03.jpg" alt="" />
+						<img class="instructor" src="imgs/2022.jpg" alt="" />
+						<div class="p-20">
+							<h4 class="m-0">Mastering Web Design</h4>
+							<p class="description c-grey mt-15 fs-14">
+								Master The Art Of Web Designing And Mocking, Prototyping And
+								Creating Web Design Architecture
+							</p>
+						</div>
+						<div class="info p-15 p-relative between-flex">
+							<span class="title bg-blue c-white btn-shape">Course Info</span>
+							<span class="c-grey">
+								<i class="fa-regular fa-user"></i>
+								950
+							</span>
+							<span class="c-grey">
+								<i class="fa-solid fa-dollar-sign"></i>
+								165
+							</span>
+						</div>
+					</div>
+					<div class="course bg-white rad-6 p-relative">
+						<img class="cover" src="imgs/course-04.jpg" alt="" />
+						<img class="instructor" src="imgs/2022.jpg" alt="" />
+						<div class="p-20">
+							<h4 class="m-0">Mastering Web Design</h4>
+							<p class="description c-grey mt-15 fs-14">
+								Master The Art Of Web Designing And Mocking, Prototyping And
+								Creating Web Design Architecture
+							</p>
+						</div>
+						<div class="info p-15 p-relative between-flex">
+							<span class="title bg-blue c-white btn-shape">Course Info</span>
+							<span class="c-grey">
+								<i class="fa-regular fa-user"></i>
+								950
+							</span>
+							<span class="c-grey">
+								<i class="fa-solid fa-dollar-sign"></i>
+								165
+							</span>
+						</div>
+					</div>
+					<div class="course bg-white rad-6 p-relative">
+						<img class="cover" src="imgs/course-05.jpg" alt="" />
+						<img class="instructor" src="imgs/2022.jpg" alt="" />
+						<div class="p-20">
+							<h4 class="m-0">Mastering Web Design</h4>
+							<p class="description c-grey mt-15 fs-14">
+								Master The Art Of Web Designing And Mocking, Prototyping And
+								Creating Web Design Architecture
+							</p>
+						</div>
+						<div class="info p-15 p-relative between-flex">
+							<span class="title bg-blue c-white btn-shape">Course Info</span>
+							<span class="c-grey">
+								<i class="fa-regular fa-user"></i>
+								950
+							</span>
+							<span class="c-grey">
+								<i class="fa-solid fa-dollar-sign"></i>
+								165
+							</span>
+						</div>
+					</div>
+					<div class="course bg-white rad-6 p-relative">
+						<img class="cover" src="imgs/course-01.jpg" alt="" />
+						<img class="instructor" src="imgs/2022.jpg" alt="" />
+						<div class="p-20">
+							<h4 class="m-0">Mastering Web Design</h4>
+							<p class="description c-grey mt-15 fs-14">
+								Master The Art Of Web Designing And Mocking, Prototyping And
+								Creating Web Design Architecture
+							</p>
+						</div>
+						<div class="info p-15 p-relative between-flex">
+							<span class="title bg-blue c-white btn-shape">Course Info</span>
+							<span class="c-grey">
+								<i class="fa-regular fa-user"></i>
+								950
+							</span>
+							<span class="c-grey">
+								<i class="fa-solid fa-dollar-sign"></i>
+								165
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

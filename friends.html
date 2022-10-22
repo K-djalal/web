@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="Css/all.min.css" />
+		<link rel="stylesheet" href="Css/framework.css" />
+		<link rel="stylesheet" href="Css/master.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?=family=Open+Sans:wght@300;500&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Friends</title>
+	</head>
+	<body>
+		<div class="page d-flex">
+			<div class="sidebar bg-linear">
+				<h3 class="p-relative text-c mt-0">DJALAL</h3>
+				<div class="navigation2 ">
+					<ul>
+						<li class="list1 ">
+							<b></b>
+							<b></b>
+
+							<a href="bannar.html">
+								<span class="icon1">
+									<ion-icon name="logo-tux"></ion-icon>
+								</span>
+								<span class="text1">Sea</span>
+							</a>
+						</li>
+						<li class="list1">
+							<b></b>
+							<b></b>
+
+							<a href="projects.html">
+								<span class="icon1">
+									<ion-icon name="git-merge-outline"></ion-icon>
+								</span>
+								<span class="text1">Projects</span>
+							</a>
+						</li>
+						<li class="list1">
+							<b></b>
+							<b></b>
+							<a href="settings.html">
+								<span class="icon1">
+									<ion-icon name="settings-outline"></ion-icon>
+								</span>
+								<span class="text1">Settings</span>
+							</a>
+						</li>
+						<li class="list1">
+							<b></b>
+							<b></b>
+							<a href="profile.html">
+								<span class="icon1">
+									<ion-icon name="person-outline"></ion-icon>
+								</span>
+								<span class="text1">Profile</span>
+							</a>
+						</li>
+						<li class="list1">
+							<b></b>
+							<b></b>
+							<a href="index.html">
+								<span class="icon1">
+									<ion-icon name="bar-chart-outline"></ion-icon>
+								</span>
+								<span class="text1">Dashboard </span>
+							</a>
+						</li>
+						<li class="list1">
+							<b></b>
+							<b></b>
+							<a href="courses.html">
+								<span class="icon1">
+									<ion-icon name="reader-outline"></ion-icon>
+								</span>
+								<span class="text1">Courses</span>
+							</a>
+						</li>
+						<li class="list1 active">
+							<b></b>
+							<b></b>
+							<a href="friends.html">
+								<span class="icon1">
+									<ion-icon name="people-circle-outline"></ion-icon>
+								</span>
+								<span class="text1">Friends</span>
+							</a>
+						</li>
+						<li class="list1">
+							<b></b>
+							<b></b>
+							<a href="files.html">
+								<span class="icon1">
+									<ion-icon name="document-outline"></ion-icon>
+								</span>
+								<span class="text1">Files</span>
+							</a>
+						</li>
+						<li class="list1">
+							<b></b>
+							<b></b>
+							<a href="plans.html">
+								<span class="icon1">
+									<ion-icon name="card-outline"></ion-icon>
+								</span>
+								<span class="text1">Plans</span>
+							</a>
+						</li>
+						<li class="list1">
+							<b></b>
+							<b></b>
+							<a href="hours.html">
+								<span class="icon1">
+									<ion-icon name="time-outline"></ion-icon>
+								</span>
+								<span class="text1">Hour</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="toggle1">
+				<ion-icon name="menu-outline" class="open"></ion-icon>
+				<ion-icon name="close-outline" class="close"></ion-icon>
+			</div>
+			<script
+				type="module"
+				src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+			></script>
+			<script
+				nomodule
+				src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+			></script>
+			<script>
+				// add toggle
+
+				let menuToggle1 = document.querySelector('.toggle1');
+				let navigation2 = document.querySelector('.navigation2');
+				menuToggle1.onclick = function () {
+					menuToggle1.classList.toggle('active');
+					navigation2.classList.toggle('active');
+				};
+				// add active class in selected list item
+				let list1 = document.querySelectorAll('.list1');
+				for (let i = 0; i < list1.length; i++) {
+					list1[i].onclick = function () {
+						let j = 0;
+						while (j < list1.length) {
+							list1[j++].className = 'list1';
+						}
+						list1[i].className = 'list1 active';
+					};
+				}
+			</script>
+			<div class="content bg-linear w-full">
+				<!-- start Head -->
+				<div class="head bg-white p-15 between-flex">
+					<div class="search p-relative">
+						<input class="p-10" type="search" placeholder="Type A Keyword" />
+					</div>
+					<div class="icons d-flex align-center">
+						<span class="notification p-relative">
+							<i class="fa-regular fa-bell fa-lg"></i>
+						</span>
+						<img src="imgs/IMG-20220511-WA0001.jpg" alt="" />
+					</div>
+				</div>
+				<h1 class="p-relative">Friends</h1>
+				<div class="friends-page d-grid m-20 gap-20">
+					<div class="friend bg-white rad-6 p-20 p-relative">
+						<div class="contact">
+							<i class="fa-solid fa-phone"></i>
+							<i class="fa-regular fa-envelope"></i>
+						</div>
+						<div class="text-c">
+							<img
+								class="rad-half mt-10 mb-10 w-100 h-100"
+								src="imgs/friend-01.jpg"
+								alt=""
+							/>
+							<h4 class="m-0">Djalal</h4>
+							<p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+						</div>
+						<div class="icons fs-14 p-relative">
+							<div class="mb-10">
+								<i class="fa-regular fa-face-smile fa-fw"></i>
+								<span>99 Friends</span>
+							</div>
+							<div class="mb-10">
+								<i class="fa-solid fa-code-commit fa-fw"></i>
+								<span>15 Projects</span>
+							</div>
+							<div>
+								<i class="fa-regular fa-newspaper fa-fw"></i>
+								<span>25 Articles</span>
+							</div>
+							<span class="vip fw-bold c-orange">VIP</span>
+						</div>
+						<div class="info between-flex fs-13">
+							<span class="c-grey">Joined 02/02/2013 </span>
+							<div>
+								<a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+								<a class="bg-red c-white btn-shape" href="#">Remove</a>
+							</div>
+						</div>
+					</div>
+					<div class="friend bg-white rad-6 p-20 p-relative">
+						<div class="contact">
+							<i class="fa-solid fa-phone"></i>
+							<i class="fa-regular fa-envelope"></i>
+						</div>
+						<div class="text-c">
+							<img
+								class="rad-half mt-10 mb-10 w-100 h-100"
+								src="imgs/friend-03.jpg"
+								alt=""
+							/>
+							<h4 class="m-0">Yacine</h4>
+							<p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+						</div>
+						<div class="icons fs-14 p-relative">
+							<div class="mb-10">
+								<i class="fa-regular fa-face-smile fa-fw"></i>
+								<span>99 Friends</span>
+							</div>
+							<div class="mb-10">
+								<i class="fa-solid fa-code-commit fa-fw"></i>
+								<span>15 Projects</span>
+							</div>
+							<div>
+								<i class="fa-regular fa-newspaper fa-fw"></i>
+								<span>25 Articles</span>
+							</div>
+							<span class="vip fw-bold c-orange">VIP</span>
+						</div>
+						<div class="info between-flex fs-13">
+							<span class="c-grey">Joined 02/02/2013 </span>
+							<div>
+								<a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+								<a class="bg-red c-white btn-shape" href="#">Remove</a>
+							</div>
+						</div>
+					</div>
+					<div class="friend bg-white rad-6 p-20 p-relative">
+						<div class="contact">
+							<i class="fa-solid fa-phone"></i>
+							<i class="fa-regular fa-envelope"></i>
+						</div>
+						<div class="text-c">
+							<img
+								class="rad-half mt-10 mb-10 w-100 h-100"
+								src="imgs/friend-02.jpg"
+								alt=""
+							/>
+							<h4 class="m-0">Anis</h4>
+							<p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+						</div>
+						<div class="icons fs-14 p-relative">
+							<div class="mb-10">
+								<i class="fa-regular fa-face-smile fa-fw"></i>
+								<span>99 Friends</span>
+							</div>
+							<div class="mb-10">
+								<i class="fa-solid fa-code-commit fa-fw"></i>
+								<span>15 Projects</span>
+							</div>
+							<div>
+								<i class="fa-regular fa-newspaper fa-fw"></i>
+								<span>25 Articles</span>
+							</div>
+							<span class="vip fw-bold c-orange">VIP</span>
+						</div>
+						<div class="info between-flex fs-13">
+							<span class="c-grey">Joined 02/02/2013 </span>
+							<div>
+								<a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+								<a class="bg-red c-white btn-shape" href="#">Remove</a>
+							</div>
+						</div>
+					</div>
+					<div class="friend bg-white rad-6 p-20 p-relative">
+						<div class="contact">
+							<i class="fa-solid fa-phone"></i>
+							<i class="fa-regular fa-envelope"></i>
+						</div>
+						<div class="text-c">
+							<img
+								class="rad-half mt-10 mb-10 w-100 h-100"
+								src="imgs/friend-04.jpg"
+								alt=""
+							/>
+							<h4 class="m-0">Salim</h4>
+							<p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+						</div>
+						<div class="icons fs-14 p-relative">
+							<div class="mb-10">
+								<i class="fa-regular fa-face-smile fa-fw"></i>
+								<span>99 Friends</span>
+							</div>
+							<div class="mb-10">
+								<i class="fa-solid fa-code-commit fa-fw"></i>
+								<span>15 Projects</span>
+							</div>
+							<div>
+								<i class="fa-regular fa-newspaper fa-fw"></i>
+								<span>25 Articles</span>
+							</div>
+							<span class="vip fw-bold c-orange">VIP</span>
+						</div>
+						<div class="info between-flex fs-13">
+							<div>
+								<a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+								<a class="bg-red c-white btn-shape" href="#">Remove</a>
+							</div>
+						</div>
+					</div>
+	
+					<div class="friend bg-white rad-6 p-20 p-relative">
+						<div class="contact">
+							<i class="fa-solid fa-phone"></i>
+							<i class="fa-regular fa-envelope"></i>
+						</div>
+						<div class="text-c">
+							<img
+								class="rad-half mt-10 mb-10 w-100 h-100"
+								src="imgs/friend-05.jpg"
+								alt=""
+							/>
+							<h4 class="m-0">Djalal</h4>
+							<p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+						</div>
+						<div class="icons fs-14 p-relative">
+							<div class="mb-10">
+								<i class="fa-regular fa-face-smile fa-fw"></i>
+								<span>99 Friends</span>
+							</div>
+							<div class="mb-10">
+								<i class="fa-solid fa-code-commit fa-fw"></i>
+								<span>15 Projects</span>
+							</div>
+							<div>
+								<i class="fa-regular fa-newspaper fa-fw"></i>
+								<span>25 Articles</span>
+							</div>
+							<span class="vip fw-bold c-orange">VIP</span>
+						</div>
+						<div class="info between-flex fs-13">
+							<span class="c-grey">Joined 02/02/2013 </span>
+							<div>
+								<a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+								<a class="bg-red c-white btn-shape" href="#">Remove</a>
+							</div>
+						</div>
+					</div>
+					<div class="friend bg-white rad-6 p-20 p-relative">
+						<div class="contact">
+							<i class="fa-solid fa-phone"></i>
+							<i class="fa-regular fa-envelope"></i>
+						</div>
+						<div class="text-c">
+							<img
+								class="rad-half mt-10 mb-10 w-100 h-100"
+								src="imgs/friend-03.jpg"
+								alt=""
+							/>
+							<h4 class="m-0">Djalal</h4>
+							<p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+						</div>
+						<div class="icons fs-14 p-relative">
+							<div class="mb-10">
+								<i class="fa-regular fa-face-smile fa-fw"></i>
+								<span>99 Friends</span>
+							</div>
+							<div class="mb-10">
+								<i class="fa-solid fa-code-commit fa-fw"></i>
+								<span>15 Projects</span>
+							</div>
+							<div>
+								<i class="fa-regular fa-newspaper fa-fw"></i>
+								<span>25 Articles</span>
+							</div>
+							<span class="vip fw-bold c-orange">VIP</span>
+						</div>
+						<div class="info between-flex fs-13">
+							<span class="c-grey">Joined 02/02/2013 </span>
+							<div>
+								<a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+								<a class="bg-red c-white btn-shape" href="#">Remove</a>
+							</div>
+						</div>
+					</div>
+					<div class="friend bg-white rad-6 p-20 p-relative">
+						<div class="contact">
+							<i class="fa-solid fa-phone"></i>
+							<i class="fa-regular fa-envelope"></i>
+						</div>
+						<div class="text-c">
+							<img
+								class="rad-half mt-10 mb-10 w-100 h-100"
+								src="imgs/friend-04.jpg"
+								alt=""
+							/>
+							<h4 class="m-0">Djalal</h4>
+							<p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+						</div>
+						<div class="icons fs-14 p-relative">
+							<div class="mb-10">
+								<i class="fa-regular fa-face-smile fa-fw"></i>
+								<span>99 Friends</span>
+							</div>
+							<div class="mb-10">
+								<i class="fa-solid fa-code-commit fa-fw"></i>
+								<span>15 Projects</span>
+							</div>
+							<div>
+								<i class="fa-regular fa-newspaper fa-fw"></i>
+								<span>25 Articles</span>
+							</div>
+						</div>
+						<div class="info between-flex fs-13">
+							<span class="c-grey">Joined 02/02/2013 </span>
+							<div>
+								<a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+								<a class="bg-red c-white btn-shape" href="#">Remove</a>
+							</div>
+						</div>
+					</div>
+					<div class="friend bg-white rad-6 p-20 p-relative">
+						<div class="contact">
+							<i class="fa-solid fa-phone"></i>
+							<i class="fa-regular fa-envelope"></i>
+						</div>
+						<div class="text-c">
+							<img
+								class="rad-half mt-10 mb-10 w-100 h-100"
+								src="imgs/friend-01.jpg"
+								alt=""
+							/>
+							<h4 class="m-0">Djalal</h4>
+							<p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+						</div>
+						<div class="icons fs-14 p-relative">
+							<div class="mb-10">
+								<i class="fa-regular fa-face-smile fa-fw"></i>
+								<span>99 Friends</span>
+							</div>
+							<div class="mb-10">
+								<i class="fa-solid fa-code-commit fa-fw"></i>
+								<span>15 Projects</span>
+							</div>
+							<div>
+								<i class="fa-regular fa-newspaper fa-fw"></i>
+								<span>25 Articles</span>
+							</div>
+							<span class="vip fw-bold c-orange">VIP</span>
+						</div>
+						<div class="info between-flex fs-13">
+							<span class="c-grey">Joined 02/02/2013 </span>
+							<div>
+								<a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+								<a class="bg-red c-white btn-shape" href="#">Remove</a>
+							</div>
+						</div>
+					</div>
+					<div class="friend bg-white rad-6 p-20 p-relative">
+						<div class="contact">
+							<i class="fa-solid fa-phone"></i>
+							<i class="fa-regular fa-envelope"></i>
+						</div>
+						<div class="text-c">
+							<img
+								class="rad-half mt-10 mb-10 w-100 h-100"
+								src="imgs/friend-02.jpg"
+								alt=""
+							/>
+							<h4 class="m-0">Djalal</h4>
+							<p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+						</div>
+						<div class="icons fs-14 p-relative">
+							<div class="mb-10">
+								<i class="fa-regular fa-face-smile fa-fw"></i>
+								<span>99 Friends</span>
+							</div>
+							<div class="mb-10">
+								<i class="fa-solid fa-code-commit fa-fw"></i>
+								<span>15 Projects</span>
+							</div>
+							<div>
+								<i class="fa-regular fa-newspaper fa-fw"></i>
+								<span>25 Articles</span>
+							</div>
+							<span class="vip fw-bold c-orange">VIP</span>
+						</div>
+						<div class="info between-flex fs-13">
+							<span class="c-grey">Joined 02/02/2013 </span>
+							<div>
+								<a class="bg-blue c-white btn-shape" href="profile.html">Profile</a>
+								<a class="bg-red c-white btn-shape" href="#">Remove</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
